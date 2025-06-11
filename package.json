@@ -1,0 +1,58 @@
+{
+  "name": "@fab33/tlogger",
+  "version": "1.0.0",
+  "description": "Defines the abstract TLogger interface for the @fab33 ecosystem, compatible with pino and other loggers.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && tsc -p tsconfig.build.json",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "repomix:all": "repomix",
+    "publish": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deksden/tlogger.git"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "keywords": [
+    "logger",
+    "typescript",
+    "interface",
+    "tlogger",
+    "pino",
+    "fab33",
+    "logging-interface"
+  ],
+  "author": "(c) fab33, by deksden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deksden/tlogger/issues"
+  },
+  "homepage": "https://github.com/deksden/tlogger#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "@typescript-eslint/eslint-plugin": "^8.33.0",
+    "@typescript-eslint/parser": "^8.33.0",
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "globals": "^16.2.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
+  }
+}
