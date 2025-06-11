@@ -1,7 +1,7 @@
 /**
  * @file src/index.ts
  * @description Определяет абстрактный интерфейс логгера для экосистемы @fab33.
- * @version 1.0.1
+ * @version 1.0.3
  * @date 2025-06-11
  *
  * HISTORY:

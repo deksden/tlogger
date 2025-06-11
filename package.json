@@ -1,6 +1,6 @@
 {
   "name": "@fab33/tlogger",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Defines the abstract TLogger interface for the @fab33 ecosystem, compatible with pino and other loggers.",
   "type": "module",
   "main": "dist/index.js",
