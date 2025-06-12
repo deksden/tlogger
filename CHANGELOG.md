@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2025-06-12
+
+### Added
+- `LoggerOptions`: Новый тип для явной конфигурации инстанса логгера.
+- `TransportOptions`: Базовый тип для опций транспорта.
+- `PinoTransport`: Тип, описывающий транспорт, совместимый с Pino (stream или target).
+
 ## [1.0.2] - 2025-06-12
 
 ### Added

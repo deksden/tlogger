@@ -1,7 +1,7 @@
 {
   "name": "@fab33/tlogger",
-  "version": "1.0.3",
-  "description": "Defines the abstract TLogger interface for the @fab33 ecosystem, compatible with pino and other loggers.",
+  "version": "1.1.0",
+  "description": "Defines the abstract TLogger interface and configuration types for the @fab33 ecosystem, compatible with pino and other loggers.",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,7 +34,8 @@
     "tlogger",
     "pino",
     "fab33",
-    "logging-interface"
+    "logging-interface",
+    "config"
   ],
   "author": "(c) fab33, by deksden",
   "license": "MIT",
